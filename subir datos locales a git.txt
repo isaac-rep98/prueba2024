@@ -1,0 +1,70 @@
+Hay casos en tenemos creado algo en nuestro PC y queremos convertirlo a
+repositorio de GitHub.
+Vamos a explicar brevemente como realizar este proceso.
+
+1. Debemos estar dentro del directorio correcto, el cual queremos convertir
+a repositorio.
+Cualquier directorio en nuestro PC no es un repositorio Git, por lo que vamos 
+a convertilo en un repositorio Git con el siguiente comando:
+
+git init
+
+2. Después de convertir nuestro directorio en un repositorio Git, la primera cosa 
+que necesitamos hacer es revisar los archivos que tenemos utilizando el siguiente comando.
+
+git status
+
+3. Si en ese directorio hay documentos que necesitamos "agregar" a nuestro Repo, realizamos
+el siguiente comando:
+
+git add [NOMBRE_ARCHIVO] [NOMBRE_ARCHIVO] ...
+
+NOTA: Para agregar todos los archivos en nuestro repositorio, podemos utilizar el siguiente
+comando:
+
+git add .
+
+4. Después de que el área de preparación (el proceso de Add) está completo, podemos revisar 
+si nuestros archivos fueron agregados satisfactoriamente o no ejecutando git status
+Si esos archivos en particular están en verde como la imagen de abajo, haz hecho tu trabajo!
+
+git status
+
+5. Después tenemos que hacer "commit" con una descripción.
+
+git commit -m "Comentario por converir un directorio en un repo Git."
+
+6. Si mi repositorio inició en GitHub y lo descargo a mi computadora, un remote ya estará 
+unido a él (Tipo 1). Pero si estoy iniciando mi repositorio en mi computadora, no tiene 
+un remote asociado con él, así que necesito agregarlo (Tipo 2).
+
+Así que para agregar ese remote, primero tenemos que ir a GitHub. Crear un nuevo repositorio 
+y nombrarlo como queramos almacenarlo en GitHub. Después hacer clic en el botón 
+"Crear repositorio".
+
+NOTA: En el tipo 2, por favor no inicialices el repositorio con un archivo README 
+cuando crees un nuevo repositorio en la página web de GitHub.
+
+7. Copia la dirección HTTPS. Ahora crearemos el remote para nuestro repositorio.
+
+git remote add origin [DIRECCION HTTPS]
+
+8. Después de ejecutar este comando, podemos revisar si hemos agregado el remote 
+satisfactoriamente o no con el siguiente comando
+
+git remote
+
+Y si genera "origin", haz agregado el remote a tu proyecto
+
+NOTA: Solo recuerda que podemos indicar cualquier nombre para el remote cambiando 
+el nombre "origin". Por ejemplo:
+
+git remote add [NOMBRE REMOTE] [DIRECCION HTTPS]
+
+9. Ahora, podemos enviar nuestro proyecto a GitHub sin ningún problema!
+
+gir remote origin [main/master]
+
+10. Después de completar estos pasos uno por uno, si vas GitHub puedes
+encontrar tu repositorio con los archivos!
+
