@@ -1,0 +1,50 @@
+1. “status”: La primer cosa que necesitas hacer es revisar 
+los archivos que has modificado. Para hacer esto, 
+puedes escribir el siguiente comando para hacer 
+aparecer una lista de cambios.
+
+git status
+
+2. “add”: Con la ayuda de la lista de cambios, puedes 
+agregar todos los archivos que quieras cargar 
+con el siguiente comando,
+
+git add [NOMBRE_ARCHIVO] [NOMBRE_ARCHIVO]
+
+3. “commit”: Ahora que hemos agregado los archivos 
+de nuestra elección, necesitamos escribir un 
+mensaje para explicar lo que hemos hecho. Este mensaje puede 
+ser útil después si queremos revisar el historial de cambios. 
+Aquí hay un ejemplo de lo que podemos poner en nuestro caso.
+
+git commit -m "comentario para comentar que modificaciones se han realizdo."
+
+4. “push”: Ahora podemos poner nuestro trabajo en GitHub. Para hacer 
+eso, necesitamos 'enviar' nuestros archivos a Remote. Remote es una 
+instancia duplicada de nuestro repositorio que vive en algún otro 
+lugar en un servidor remoto. Para hacer esto, debemos saber 
+el nombre del Remote (En general, Remote es nombrado origen). 
+Para encontrar ese nombre, escribe el siguiente comando.
+
+git remote
+
+El nombre de nuestro remote es origin. Ahora podemos 'enviar' 
+de manera segura nuestro trabajo con el siguiente comando.
+
+git push origin main
+
+5. Configuración previa para enviar nuestro trabajo a GitHub.
+git config --global user.email "ejemplo@gmail.com"
+git config --global user.name "usuario-git"
+
+resumen
+-------------
+# Una vez iniciado git
+git config --global user.email "ejemplo@gmail.com"
+git config --global user.name "usuario-git"
+
+git status
+git add [NOMBRE_ARCHIVO] [NOMBRE_ARCHIVO]
+git commit -m "comentario para comentar que modificaciones se han realizdo."
+git remote
+git push origin main
