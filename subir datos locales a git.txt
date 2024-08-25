@@ -63,8 +63,30 @@ git remote add [NOMBRE REMOTE] [DIRECCION HTTPS]
 
 9. Ahora, podemos enviar nuestro proyecto a GitHub sin ningún problema!
 
-gir remote origin [main/master]
+gir push origin [main/master]
 
 10. Después de completar estos pasos uno por uno, si vas GitHub puedes
 encontrar tu repositorio con los archivos!
 
+resumen
+
+git init
+git status
+
+git add [NOMBRE_ARCHIVO] [NOMBRE_ARCHIVO] ... # seleccionar archivos
+git add . # todos los archivos del directorio/ahora repo Git
+
+git commit -m "Comentario por converir un directorio en un repo Git."
+
+# Crear repositorio en GitHub en la Web.
+# Nombrar la repo
+# Se crea una dirección HTTPS para poder utilizar
+
+git remote add origin [DIRECCION HTTPS]
+# En el caso de subir correctamente la nueva repo, tendremos de salida 'origin'.
+
+# Podemos modificar el nombre del servidor de git 'origin' por otra.
+git remote add [NOMBRE REMOTE] [DIRECCION HTTPS]
+
+# Subir enviar proyecto a servidor GitHub.
+gir push origin [main/master]
